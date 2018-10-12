@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="E:/06_demo_all_2018/06_demo_all.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/dan/Desktop/electronics/code_base/06_demo_all.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e6a4e5df04c94149963ef0c159be1529"/>
@@ -18,6 +18,7 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val="digilentinc.com:arty:part0:1.1"/>
+    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -32,7 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="arty"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="102"/>
+    <Option Name="WTXSimLaunchSim" Val="117"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -56,140 +57,194 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/src/pmod_oled/Delay.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/New folder/types.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../New folder/types.vhd"/>
+          <Attr Name="ImportTime" Val="1539352564"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/pmod_oled/OledInit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/Delay.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/Delay.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/pmod_oled/OledUser.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/OledInit.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/OledInit.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/pmod_oled/PmodOLEDCtrl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/OledUser.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/OledUser.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/pmod_oled/SpiCtrl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/PmodOLEDCtrl.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/PmodOLEDCtrl.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/clk_prescaler.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/SpiCtrl.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/SpiCtrl.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/fifo_ram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/clk_prescaler.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/clk_prescaler.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/data_processing_input.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/fifo_ram.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/fifo_ram.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/pipeline.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/data_processing_input.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/data_processing_input.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/my_FIR_filter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/pipeline.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pipeline.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/my_filter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/my_FIR_filter.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/my_FIR_filter.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/data_processing.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/my_filter.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/my_filter.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/dbg_pwm_out.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/data_processing.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/data_processing.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/i2c/i2c_master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/dbg_pwm_out.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/dbg_pwm_out.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/i2c/i2c_wrapper.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/i2c/i2c_master.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/i2c/i2c_master.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/spi/spi_master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/i2c/i2c_wrapper.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/i2c/i2c_wrapper.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/spi/spi_wrapper_1x.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_master.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_master.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/spi/spi_controller.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_wrapper_1x.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_wrapper_1x.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/uart/uart_tx.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_controller.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_controller.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/uart/uart_rx.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/uart/uart_tx.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart_tx.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/uart/uart.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/uart/uart_rx.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart_rx.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/fpga_top.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/src/uart/uart.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-      </File>     
-      <File Path="$PPRDIR/src/pmod_oled/charLib.coe">
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/fpga_top.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/fpga_top.vhd"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/charLib.coe">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/charLib.coe"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -202,69 +257,99 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/src/fpga_constraints.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/src/fpga_constraints.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/fpga_constraints.xdc"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PPRDIR/src/fpga_constraints.xdc"/>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/src/fpga_constraints.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/src_tb/bfm_i2c_slave.sv">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/src_tb/bfm_i2c_slave.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_tb/bfm_i2c_slave.sv"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src_tb/bfm_uart.sv">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/src_tb/bfm_uart.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_tb/bfm_uart.sv"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src_tb/tb_top.sv">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/src_tb/tb_top.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_tb/tb_top.sv"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src_tb/files/i_file_001.txt"/>
-      <File Path="$PPRDIR/tb_dut.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/src_tb/files/i_file_001.txt">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_tb/files/i_file_001.txt"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/code_base/tb_dut.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/tb_dut.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src_ip/xadc_wiz_0/xadc_in.txt"/>
-      <File Path="$PPRDIR/tb_spi.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/src_ip/xadc_wiz_0/xadc_in.txt">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_ip/xadc_wiz_0/xadc_in.txt"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/code_base/tb_spi.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/tb_spi.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/tb_xadc.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/tb_xadc.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/tb_xadc.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/tb_oled.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/tb_oled.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/tb_oled.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/EGH449_prac03.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/EGH449_prac03.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/EGH449_prac03.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/tb_filter.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/code_base/tb_filter.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/tb_filter.wcfg"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -286,8 +371,10 @@
       </Config>
     </FileSet>
     <FileSet Name="mem_oled_char_lib" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mem_oled_char_lib">
-      <File Path="$PPRDIR/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci">
+      <File Path="$PSRCDIR/mem_oled_char_lib/ip/mem_oled_char_lib/mem_oled_char_lib.xci">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -299,8 +386,10 @@
       </Config>
     </FileSet>
     <FileSet Name="xadc_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xadc_wiz_0">
-      <File Path="$PPRDIR/src_ip/xadc_wiz_0/xadc_wiz_0.xci">
+      <File Path="$PSRCDIR/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_ip/xadc_wiz_0/xadc_wiz_0.xci"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -312,8 +401,10 @@
       </Config>
     </FileSet>
     <FileSet Name="clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0">
-      <File Path="$PPRDIR/src_ip/clk_wiz_0/clk_wiz_0.xci">
+      <File Path="$PSRCDIR/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0.xci">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src_ip/clk_wiz_0/clk_wiz_0.xci"/>
+          <Attr Name="ImportTime" Val="1539353186"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -344,43 +435,39 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="mem_oled_char_lib_synth_1" Type="Ft3:Synth" SrcSet="mem_oled_char_lib" Part="xc7a35ticsg324-1L" ConstrsSet="mem_oled_char_lib" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mem_oled_char_lib_synth_1" IncludeInArchive="true">
+    <Run Id="mem_oled_char_lib_synth_1" Type="Ft3:Synth" SrcSet="mem_oled_char_lib" Part="xc7a35ticsg324-1L" ConstrsSet="mem_oled_char_lib" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="xadc_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="xadc_wiz_0" Part="xc7a35ticsg324-1L" ConstrsSet="xadc_wiz_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/xadc_wiz_0_synth_1" IncludeInArchive="true">
+    <Run Id="xadc_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="xadc_wiz_0" Part="xc7a35ticsg324-1L" ConstrsSet="xadc_wiz_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="clk_wiz_0" Part="xc7a35ticsg324-1L" ConstrsSet="clk_wiz_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_wiz_0_synth_1" IncludeInArchive="true">
+    <Run Id="clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="clk_wiz_0" Part="xc7a35ticsg324-1L" ConstrsSet="clk_wiz_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="false">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -395,7 +482,6 @@
           <Option Id="BinFile">1</Option>
         </Step>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>

@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
+
 entity my_FIR_filter is
 	generic (
         G_DATA_WIDTH    : INTEGER := 32
