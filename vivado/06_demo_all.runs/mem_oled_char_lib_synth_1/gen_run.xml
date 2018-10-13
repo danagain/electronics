@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="mem_oled_char_lib_synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1539447714">
+  <File Type="PA-TCL" Name="mem_oled_char_lib.tcl"/>
+  <File Type="REPORTS-TCL" Name="mem_oled_char_lib_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mem_oled_char_lib.vds"/>
+  <File Type="RDS-UTIL" Name="mem_oled_char_lib_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mem_oled_char_lib_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mem_oled_char_lib.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mem_oled_char_lib">
+    <File Path="$PSRCDIR/mem_oled_char_lib/ip/mem_oled_char_lib/mem_oled_char_lib.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mem_oled_char_lib"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mem_oled_char_lib">
+    <File Path="$PSRCDIR/mem_oled_char_lib/ip/mem_oled_char_lib/mem_oled_char_lib.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mem_oled_char_lib"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1539475002">
+  <File Type="PA-TCL" Name="fpga_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="fpga_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="fpga_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fpga_top.vds"/>
+  <File Type="RDS-UTIL" Name="fpga_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fpga_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fpga_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fpga_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fpga_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/CoeffHelpers.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../New folder/CoeffHelpers.vhd"/>
+        <Attr Name="ImportTime" Val="1539462630"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/standard_additions_c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../New folder/standard_additions_c.vhd"/>
+        <Attr Name="ImportTime" Val="1539460445"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/Delay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/Delay.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/OledInit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/OledInit.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/OledUser.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/OledUser.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/PmodOLEDCtrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/PmodOLEDCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/SpiCtrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/SpiCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/clk_prescaler.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/clk_prescaler.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/fifo_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/fifo_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/data_processing_input.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/data_processing_input.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pipeline.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pipeline.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/my_FIR_filter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/my_FIR_filter.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/my_filter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/my_filter.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/data_processing.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/data_processing.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dbg_pwm_out.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/dbg_pwm_out.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/i2c/i2c_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/i2c/i2c_master.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/i2c/i2c_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/i2c/i2c_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_master.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_wrapper_1x.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_wrapper_1x.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/spi/spi_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/spi/spi_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart/uart_tx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart/uart_rx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart_rx.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart/uart.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/uart/uart.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pmod_oled/charLib.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/pmod_oled/charLib.coe"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/New folder/types.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../New folder/types.vhd"/>
+        <Attr Name="ImportTime" Val="1539352564"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/fpga_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/fpga_top.vhd"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/fpga_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/fpga_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1539353186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/src/fpga_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mem_oled_char_lib"/>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

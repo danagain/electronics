@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.sim/sim_1/impl/func/xsim/tb_top_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Delay
+INFO: [VRFC 10-311] analyzing module OledInit
+INFO: [VRFC 10-311] analyzing module OledUser
+INFO: [VRFC 10-311] analyzing module PmodOLEDCtrl
+INFO: [VRFC 10-311] analyzing module SpiCtrl
+INFO: [VRFC 10-311] analyzing module SpiCtrl_2
+INFO: [VRFC 10-311] analyzing module clk_prescaler
+INFO: [VRFC 10-311] analyzing module clk_prescaler_0
+INFO: [VRFC 10-311] analyzing module clk_prescaler__parameterized0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module data_processing
+INFO: [VRFC 10-311] analyzing module data_processing_input
+INFO: [VRFC 10-311] analyzing module dbg_pwm_out
+INFO: [VRFC 10-311] analyzing module fifo_ram
+INFO: [VRFC 10-311] analyzing module fifo_ram_1
+INFO: [VRFC 10-311] analyzing module fifo_ram_3
+INFO: [VRFC 10-311] analyzing module fpga_top
+INFO: [VRFC 10-311] analyzing module i2c_master
+INFO: [VRFC 10-311] analyzing module i2c_wrapper
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib
+INFO: [VRFC 10-311] analyzing module my_FIR_filter
+INFO: [VRFC 10-311] analyzing module my_filter
+INFO: [VRFC 10-311] analyzing module spi_controller
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_wrapper_1x
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-311] analyzing module xadc_wiz_0
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/code_base/src_tb/bfm_i2c_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bfm_i2c_slave
+INFO: [VRFC 10-2458] undeclared symbol SDA_shadow, assumed default net type wire [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/code_base/src_tb/bfm_i2c_slave.sv:28]
+INFO: [VRFC 10-2458] undeclared symbol start_or_stop, assumed default net type wire [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/code_base/src_tb/bfm_i2c_slave.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/code_base/src_tb/bfm_uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bfm_uart

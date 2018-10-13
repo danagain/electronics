@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../06_demo_all.srcs/sim_1/imports/New folder/standard_additions_c.vhdl" \
+"../../../../../06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhdl" \
+
+# Do not sort compile order
+nosort

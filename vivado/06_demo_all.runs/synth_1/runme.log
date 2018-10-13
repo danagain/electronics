@@ -1,0 +1,1426 @@
+
+*** Running vivado
+    with args -log fpga_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fpga_top.tcl -notrace
+Command: synth_design -top fpga_top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 462.441 ; gain = 101.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_top' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:59]
+	Parameter G_IN_SIM bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/clk_wiz_0_stub.v:5' bound to instance 'PM_PLL' of component 'clk_wiz_0' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:189]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_prescaler' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/clk_prescaler.vhd:14]
+	Parameter PRESCALER bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_prescaler' (2#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/clk_prescaler.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'clk_prescaler__parameterized0' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/clk_prescaler.vhd:14]
+	Parameter PRESCALER bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_prescaler__parameterized0' (2#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/clk_prescaler.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'i2c_wrapper' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_wrapper.vhd:20]
+	Parameter input_clk bound to: 100000000 - type: integer 
+	Parameter bus_clk bound to: 100000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'i2c_master' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_master.vhd:54]
+	Parameter input_clk bound to: 100000000 - type: integer 
+	Parameter bus_clk bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2c_master' (3#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_master.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element data_rd_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_wrapper.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'i2c_wrapper' (4#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_wrapper.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'spi_controller' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_controller.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'spi_wrapper_1x' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:48]
+	Parameter G_NUM_SPI_CLKS_READ bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_master.vhd:44]
+	Parameter G_SPI_CLKS_READ bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (5#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_master.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:153]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:197]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:198]
+WARNING: [Synth 8-6014] Unused sequential element trigger_adc_samples_xfer_3_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:130]
+WARNING: [Synth 8-6014] Unused sequential element spi_wr_valid_xfer_3_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element spi_wr_taken_xfer_3_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:215]
+WARNING: [Synth 8-6014] Unused sequential element spi_rd_valid_xfer_3_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:219]
+WARNING: [Synth 8-3848] Net spi_rst in module/entity spi_wrapper_1x does not have driver. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'spi_wrapper_1x' (6#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:48]
+WARNING: [Synth 8-3848] Net spi_rst in module/entity spi_controller does not have driver. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_controller.vhd:21]
+WARNING: [Synth 8-3848] Net spi_ch in module/entity spi_controller does not have driver. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_controller.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'spi_controller' (7#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_controller.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart.vhd:74]
+	Parameter G_BAUD_RATE bound to: 115200 - type: integer 
+	Parameter G_CLOCK_FREQ bound to: 100000000.000000 - type: float 
+INFO: [Synth 8-638] synthesizing module 'fifo_ram' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fifo_ram.vhd:64]
+	Parameter G_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter G_DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_ram' (8#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fifo_ram.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart_tx.vhd:56]
+	Parameter G_BAUD_RATE bound to: 115200 - type: integer 
+	Parameter G_CLOCK_FREQ bound to: 100000000.000000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (9#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart_tx.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart_rx.vhd:58]
+	Parameter G_BAUD_RATE bound to: 115200 - type: integer 
+	Parameter G_CLOCK_FREQ bound to: 100000000.000000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (10#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart_rx.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'uart' (11#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/uart/uart.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'data_processing' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing.vhd:35]
+	Parameter G_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_processing_input' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing_input.vhd:38]
+	Parameter G_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_processing_input' (12#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing_input.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'my_filter' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd:36]
+	Parameter G_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd:60]
+INFO: [Synth 8-226] default block is never used [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'pipeline' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pipeline.vhd:29]
+	Parameter G_DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pipeline' (13#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pipeline.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'my_FIR_filter' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:32]
+	Parameter coeffs bound to: 2368'b1011111100111010010001011011100010101100100111010000001011110100101111110101001110001101000001101100010110110010010010101010101110111111011000111110101100101111001111100110010011001111010101101011111101110000011010111111101011011011111110100011010000100010101111110111011100100111010101100101000001100010011110100000011110111111011111000101001101000101000100101101000100011011011101111011111101111101100001111101110011111000100011100000100010101001101111110111100000010100101001100101101011101101111111001101010010111111011000101101101100010111100011111101011000010011111001010011111101110000010101100010111000011011010001000101110111011010001111111000101100000000101000011101010100000111000101111010010100111111100110011011100010110110110100110000111011100110101111010011111110100100000101001000001001010100111111011101111110001010001111111010101111101011111001100101100000001100111101101010000000111111101100011101111110111100000000011011000101110000010100000011111110110101011011000101101100111001100110111100000100001110001111111011100001000010101001000010101001100001001011001100101000111111101110100001011111000100001111011011000100111010101111100011111110111010101110011111010101011001101100111101000001111101001111111011101000010111110001000011110110110001001110101011111000111111101110000100001010100100001010100110000100101100110010100011111110110101011011000101101100111001100110111100000100001110001111111011000111011111101111000000000110110001011100000101000000111111101010111110101111100110010110000000110011110110101000000011111110100100000101001000001001010100111111011101111110001010001111111001100110111000101101101101001100001110111001101011110100111111100010110000000010100001110101010000011100010111101001010011111101110000010101100010111000011011010001000101110111011010101111110110001011011011000101111000111111010110000100111110010110111111011110000001010010100110010110101110110111111100110101001011111101111101100001111101110011111000100011100000100010101001101111110111110001010011010001010001001011010001000110110111011110111111011101110010011101010110010100000110001001111010000001111011111101110000011010111111101011011011111110100011010000100010101111110110001111101011001011110011111001100100110011110101011010111111010100111000110100000110110001011011001001001010101010111011111100111010010001011011100010101100100111010000001101010000 
+	Parameter data_in_width bound to: 8 - type: integer 
+	Parameter data_out_width bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "yes" *) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:35]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'my_FIR_filter' (14#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'my_filter' (15#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd:36]
+WARNING: [Synth 8-3848] Net data_out in module/entity data_processing does not have driver. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'data_processing' (16#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing.vhd:35]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/xadc_wiz_0_stub.v:5' bound to instance 'PM_XADC' of component 'xadc_wiz_0' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:407]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (17#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'dbg_pwm_out' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/dbg_pwm_out.vhd:28]
+	Parameter G_INPUT_BITS bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dbg_pwm_out' (18#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/dbg_pwm_out.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDCtrl' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/PmodOLEDCtrl.vhd:42]
+	Parameter G_IN_SIM bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'OledInit' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledInit.vhd:34]
+INFO: [Synth 8-3491] module 'SpiCtrl' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/SpiCtrl.vhd:21' bound to instance 'SPI_COMP' of component 'SpiCtrl' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledInit.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'SpiCtrl' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/SpiCtrl.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SpiCtrl' (19#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/SpiCtrl.vhd:32]
+INFO: [Synth 8-3491] module 'Delay' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/Delay.vhd:19' bound to instance 'DELAY_COMP' of component 'Delay' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledInit.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'Delay' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Delay' (20#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'OledInit' (21#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledInit.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'OledUser' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledUser.vhd:42]
+INFO: [Synth 8-3491] module 'SpiCtrl' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/SpiCtrl.vhd:21' bound to instance 'PM_SPI_COMP' of component 'SpiCtrl' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledUser.vhd:165]
+INFO: [Synth 8-3491] module 'mem_oled_char_lib' declared at 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/mem_oled_char_lib_stub.v:6' bound to instance 'PM_CHAR_LIB_COMP' of component 'mem_oled_char_lib' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledUser.vhd:186]
+INFO: [Synth 8-6157] synthesizing module 'mem_oled_char_lib' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/mem_oled_char_lib_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_oled_char_lib' (22#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/.Xil/Vivado-9940-DESKTOP-43187V1/realtime/mem_oled_char_lib_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'OledUser' (23#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/OledUser.vhd:42]
+INFO: [Synth 8-226] default block is never used [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/PmodOLEDCtrl.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDCtrl' (24#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pmod_oled/PmodOLEDCtrl.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'fpga_top' (25#1) [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:59]
+WARNING: [Synth 8-3331] design pipeline has unconnected port mode[3]
+WARNING: [Synth 8-3331] design pipeline has unconnected port mode[2]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[7]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[6]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[5]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[4]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[3]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[2]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[1]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[0]
+WARNING: [Synth 8-3331] design spi_wrapper_1x has unconnected port spi_rst
+WARNING: [Synth 8-3331] design spi_controller has unconnected port spi_rst
+WARNING: [Synth 8-3331] design spi_controller has unconnected port spi_ch
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 546.734 ; gain = 186.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 546.734 ; gain = 186.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 546.734 ; gain = 186.289
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/mem_oled_char_lib/ip/mem_oled_char_lib/mem_oled_char_lib/mem_oled_char_lib_in_context.xdc] for cell 'PM_OLED/PM_UserDisp/PM_CHAR_LIB_COMP'
+Finished Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/mem_oled_char_lib/ip/mem_oled_char_lib/mem_oled_char_lib/mem_oled_char_lib_in_context.xdc] for cell 'PM_OLED/PM_UserDisp/PM_CHAR_LIB_COMP'
+Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'PM_XADC'
+Finished Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'PM_XADC'
+Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'PM_PLL'
+Finished Parsing XDC File [c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'PM_PLL'
+Parsing XDC File [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc]
+WARNING: [Vivado 12-508] No pins matched 'PM_PLL/inst/mmcm_adv_inst/CLKOUT1'. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc:104]
+WARNING: [Vivado 12-508] No pins matched 'PM_PLL/inst/mmcm_adv_inst/CLKOUT0'. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc:105]
+Finished Parsing XDC File [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/fpga_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/constrs_1/imports/src/fpga_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 885.746 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'PM_OLED/PM_UserDisp/PM_CHAR_LIB_COMP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_pad. (constraint file  c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_pad. (constraint file  c:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for PM_OLED/PM_UserDisp/PM_CHAR_LIB_COMP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PM_XADC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PM_PLL. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master'
+INFO: [Synth 8-5544] ROM "sda_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_bit_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_bit_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "spi_ch_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt_shift_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_data_sr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_rx_state_reg' in module 'uart_rx'
+INFO: [Synth 8-5546] ROM "fsm_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt_data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[36]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[35]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[34]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[33]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[32]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[31]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[30]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[29]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[28]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[27]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[26]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[25]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[24]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[23]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[22]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[21]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[20]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[19]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[18]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[17]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[16]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[15]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[14]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[13]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[12]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[11]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[10]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[9]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[8]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[7]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[6]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[5]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[4]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[3]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[2]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[1]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'chainedSum_reg[0]' and it is trimmed from '48' to '28' bits. [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-5546] ROM "pwm_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'SpiCtrl'
+INFO: [Synth 8-5544] ROM "SPI_FIN" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Delay'
+INFO: [Synth 8-5544] ROM "ms_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temp_delay_ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_screen_reg[0,15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "after_page_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "after_char_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PmodOLEDCtrl'
+INFO: [Synth 8-5544] ROM "init_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "user_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "oled_req_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_req_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "OledSetupArray[0][pos_x]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OledSetupArray[0][pos_y]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                        000000001 |                             0000
+                   start |                        000000010 |                             0001
+                 command |                        000000100 |                             0010
+                slv_ack1 |                        000001000 |                             0011
+                      wr |                        000010000 |                             0100
+                slv_ack2 |                        000100000 |                             0110
+                      rd |                        001000000 |                             0101
+                mstr_ack |                        010000000 |                             0111
+                    stop |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2c_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 waiting |                              001 |                              001
+                 writing |                              010 |                              010
+               write_end |                              011 |                              011
+                  iSTATE |                              100 |                              111
+                 reading |                              101 |                              100
+                read_end |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'spi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 rx_idle |                              001 |                               00
+                 rx_data |                              010 |                               01
+                 rx_stop |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_rx_state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    send |                              001 |                              001
+                   hold1 |                              010 |                              010
+                   hold2 |                              011 |                              011
+                   hold3 |                              100 |                              100
+                   hold4 |                              101 |                              101
+                    done |                              110 |                              110
+                  iSTATE |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'SpiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+                oleduser |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'PmodOLEDCtrl'
+WARNING: [Synth 8-327] inferring latch for variable 'di_in_reg' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:409]
+WARNING: [Synth 8-327] inferring latch for variable 'dwe_in_reg' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd:412]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 156   
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 93    
++---RAMs : 
+	              128 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  25 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 13    
+	  26 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 17    
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  28 Input      8 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 65    
+	  16 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  28 Input      5 Bit        Muxes := 1     
+	  26 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	  10 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  26 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 162   
+	   4 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 3     
+	  28 Input      1 Bit        Muxes := 10    
+	  26 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fpga_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 20    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	  25 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 13    
+	  16 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 14    
+	  10 Input      1 Bit        Muxes := 1     
+Module clk_prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_prescaler__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module i2c_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 3     
+Module i2c_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 5     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 12    
+Module spi_wrapper_1x 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module spi_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module fifo_ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+Module uart 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module data_processing_input 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pipeline 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module my_FIR_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module my_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module dbg_pwm_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SpiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 1     
+Module Delay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module OledInit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  28 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 10    
+Module OledUser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 130   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  26 Input     11 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 65    
+	   4 Input      8 Bit        Muxes := 16    
+	  26 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  26 Input      2 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 82    
+Module PmodOLEDCtrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "clk_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_int" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element PM_I2C_MASTER/data_rx_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_master.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element PM_I2C_MASTER/data_rd_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/i2c/i2c_master.vhd:118]
+INFO: [Synth 8-5544] ROM "PM_I2C_MASTER/state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PM_I2C_MASTER/state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PM_I2C_MASTER/state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/PM_SPI_M/spi_data_array_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_master.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/PM_SPI_M/spi_rd_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_master.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/PM_SPI_M/spi_ch_i_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_master.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/sys_rd_sample_valid_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:209]
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/sys_rd_sample_ch_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:210]
+WARNING: [Synth 8-6014] Unused sequential element PM_SPI_MASTER/sys_rd_sample_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/spi/spi_wrapper_1x.vhd:211]
+INFO: [Synth 8-5545] ROM "PM_SPI_MASTER/PM_SPI_M/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PM_SPI_MASTER/PM_SPI_M/spi_bit_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PM_SPI_MASTER/PM_SPI_M/spi_bit_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PM_SPI_MASTER/PM_SPI_M/spi_ch_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "uart_rx_inst/fsm_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_rx_inst/cnt_data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_rx_inst/fsm_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+INFO: [Synth 8-4471] merging register 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' into 'PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg[7:0]' [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_DATAINPUT/PM_FIFO/fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element PM_DATAINPUT/PM_FIFO/dout_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fifo_ram.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element PM_DATAINPUT/filter_in_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing_input.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element PM_DATAINPUT/data_out_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing_input.vhd:103]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_PIPELINE/pipe_2_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pipeline.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_PIPELINE/pipe_out_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/pipeline.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_out_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/filter_out_data_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/data_in_d_reg was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[1] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[2] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[3] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[4] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[5] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[6] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[7] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[8] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[9] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[10] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[11] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[12] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[13] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[14] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[15] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[16] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[17] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[18] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[19] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[20] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[21] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[22] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[23] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[24] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[25] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[26] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[27] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[28] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[29] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[30] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[31] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[32] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[33] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[34] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[35] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[36] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PM_MYFILTER/PM_FILTER_TEST/chainedSum_reg[0] was removed.  [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd:82]
+INFO: [Synth 8-5546] ROM "pwm_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_oled_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "OledSetupArray[0][pos_y]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OledSetupArray[0][pos_x]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[7]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[6]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[5]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[4]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[3]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[2]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[1]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_out[0]
+WARNING: [Synth 8-3331] design data_processing has unconnected port mode[3]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design data_processing has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design spi_controller has unconnected port spi_rst
+WARNING: [Synth 8-3331] design spi_controller has unconnected port spi_ch
+WARNING: [Synth 8-3331] design spi_controller has unconnected port spi_miso
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_oled_next_reg[1] )
+INFO: [Synth 8-3886] merging instance 'oled_digit_1_reg[3]' (FDCE) to 'oled_digit_1_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\oled_digit_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\oled_req_data_reg[7] )
+INFO: [Synth 8-3886] merging instance 'oled_req_addr_reg[3]' (FDCE) to 'oled_req_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_I2C_WRAPPER/\sm_i2c_next_reg[3] )
+INFO: [Synth 8-3886] merging instance 'dwe_in_reg' (LD) to 'di_in_reg[0]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[0]' (LD) to 'di_in_reg[1]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[1]' (LD) to 'di_in_reg[2]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[2]' (LD) to 'di_in_reg[3]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[3]' (LD) to 'di_in_reg[4]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[4]' (LD) to 'di_in_reg[5]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[5]' (LD) to 'di_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[6]' (LD) to 'di_in_reg[7]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[7]' (LD) to 'di_in_reg[8]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[8]' (LD) to 'di_in_reg[9]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[9]' (LD) to 'di_in_reg[10]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[10]' (LD) to 'di_in_reg[11]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[11]' (LD) to 'di_in_reg[12]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[12]' (LD) to 'di_in_reg[13]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[13]' (LD) to 'di_in_reg[14]'
+INFO: [Synth 8-3886] merging instance 'di_in_reg[14]' (LD) to 'di_in_reg[15]'
+INFO: [Synth 8-3886] merging instance 'daddr_in_reg[0]' (FDC) to 'daddr_in_reg[1]'
+INFO: [Synth 8-3886] merging instance 'daddr_in_reg[2]' (FDC) to 'daddr_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'daddr_in_reg[3]' (FDC) to 'daddr_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'daddr_in_reg[4]' (FDC) to 'daddr_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'daddr_in_reg[5]' (FDC) to 'daddr_in_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\daddr_in_reg[6] )
+INFO: [Synth 8-3886] merging instance 'PM_DATA_PROCESS/PM_MYFILTER/PM_PIPELINE/pipe_2_vld_reg' (FDC) to 'PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/pipe_2_vld_reg'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[7]' (FDCE) to 'PM_SPI_CONTROLLER/sys_wr_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[6]' (FDCE) to 'PM_SPI_CONTROLLER/sys_wr_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[3]' (FDCE) to 'PM_SPI_CONTROLLER/sm_spi_next_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[2]' (FDCE) to 'PM_SPI_CONTROLLER/sm_spi_next_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[1]' (FDCE) to 'PM_SPI_CONTROLLER/sm_spi_next_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/sys_wr_data_reg[0]' (FDCE) to 'PM_SPI_CONTROLLER/sm_spi_next_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_SPI_CONTROLLER/\PM_SPI_MASTER/sys_rd_trigger_tgl_reg )
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/after_update_state_reg[1]' (FDE) to 'PM_OLED/PM_UserDisp/after_update_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/after_char_state_reg[1]' (FDE) to 'PM_OLED/PM_UserDisp/after_char_state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/after_char_state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/after_update_state_reg[2]' (FDE) to 'PM_OLED/PM_UserDisp/after_update_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/after_update_state_reg[0]' (FDE) to 'PM_OLED/PM_UserDisp/after_update_state_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (PM_OLED/\PM_UserDisp/after_char_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (PM_OLED/\PM_UserDisp/after_update_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/after_update_state_reg[4] )
+INFO: [Synth 8-3886] merging instance 'PM_DATA_PROCESS/PM_MYFILTER/PM_PIPELINE/pipe_out_vld_reg' (FDC) to 'PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/data_out_vld_reg'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[7]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[6]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[2]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[1]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/spi_wr_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_SPI_CONTROLLER/\sm_spi_next_reg[0] )
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_data_wr_reg[7]' (FDCE) to 'PM_I2C_WRAPPER/i2c_data_wr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_data_wr_reg[5]' (FDCE) to 'PM_I2C_WRAPPER/i2c_data_wr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_data_wr_reg[4]' (FDCE) to 'PM_I2C_WRAPPER/i2c_data_wr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_I2C_WRAPPER/\i2c_data_wr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[7]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[5]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[4]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_addr_reg[5]' (FDCE) to 'PM_I2C_WRAPPER/i2c_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[6]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_addr_reg[6]' (FDCE) to 'PM_I2C_WRAPPER/i2c_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[7]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[5]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_addr_reg[0]' (FDCE) to 'PM_I2C_WRAPPER/i2c_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[1]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_addr_reg[1]' (FDCE) to 'PM_I2C_WRAPPER/i2c_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[2]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/i2c_addr_reg[2]' (FDCE) to 'PM_I2C_WRAPPER/i2c_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[3]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_I2C_WRAPPER/\i2c_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'PM_I2C_WRAPPER/PM_I2C_MASTER/addr_rw_reg[4]' (FDE) to 'PM_I2C_WRAPPER/PM_I2C_MASTER/data_tx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[7]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[5]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[6]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[4]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[2]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[1]' (FDCE) to 'PM_SPI_CONTROLLER/PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_Init/temp_dc_reg )
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,15][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,15][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/after_update_state_reg[4]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,15][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,15][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,15][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,15][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,15][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,15][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,14][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,14][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,14][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,14][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,14][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,14][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,14][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,14][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,13][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,13][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,13][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,13][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,13][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,13][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,13][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,13][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,12][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,12][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,12][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,12][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,12][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,12][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,12][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,12][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,11][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,11][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,11][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,11][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,11][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,11][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,11][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,11][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,10][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,10][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,10][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,10][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,10][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,10][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,10][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,10][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,9][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,9][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,9][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,9][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,9][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,9][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,9][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,9][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,8][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,8][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,8][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,8][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,8][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,8][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,8][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,8][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,7][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,7][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,7][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,7][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,7][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,7][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,7][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[3,7][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[0,6][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[0,6][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[1,6][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[1,6][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[2,6][7]'
+INFO: [Synth 8-3886] merging instance 'PM_OLED/PM_UserDisp/current_screen_reg[2,6][7]' (FDE) to 'PM_OLED/PM_UserDisp/current_screen_reg[3,6][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/current_screen_reg[3,0][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (PM_OLED/\PM_UserDisp/after_page_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/after_page_state_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_I2C_WRAPPER/\PM_I2C_MASTER/data_tx_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/temp_char_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PM_OLED/\PM_UserDisp/temp_addr_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (sm_i2c_next_reg[3]) is unused and will be removed from module i2c_wrapper.
+WARNING: [Synth 8-3332] Sequential element (i2c_addr_reg[3]) is unused and will be removed from module i2c_wrapper.
+WARNING: [Synth 8-3332] Sequential element (i2c_data_wr_reg[3]) is unused and will be removed from module i2c_wrapper.
+WARNING: [Synth 8-3332] Sequential element (PM_I2C_MASTER/ack_error_reg) is unused and will be removed from module i2c_wrapper.
+WARNING: [Synth 8-3332] Sequential element (PM_I2C_MASTER/data_tx_reg[3]) is unused and will be removed from module i2c_wrapper.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/spi_wr_data_reg[3]) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/PM_SPI_M/spi_wr_local_byte_reg[3]) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/spi_rd_valid_xfer_2_reg) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/sys_rd_trigger_tgl_reg) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/trigger_adc_samples_xfer_1_reg) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/trigger_adc_samples_xfer_2_reg) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (PM_SPI_MASTER/spi_rd_trigger_reg) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (sm_spi_next_reg[0]) is unused and will be removed from module spi_controller.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/rd_ptr_reg_rep[3]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/rd_ptr_reg_rep[2]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/rd_ptr_reg_rep[1]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/rd_ptr_reg_rep[0]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[7]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[6]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[5]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[4]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[3]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[2]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[1]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (uart_rx_inst/rx_data_sr_reg[0]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[7]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[6]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[5]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[4]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[3]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[2]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[1]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_din_r_reg[0]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[7]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[6]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[5]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[4]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[3]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[2]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[1]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (fifo_rx_inst/dout_reg[0]) is unused and will be removed from module uart.
+WARNING: [Synth 8-3332] Sequential element (PM_DATAINPUT/PM_FIFO/rd_ptr_reg_rep[3]) is unused and will be removed from module data_processing.
+WARNING: [Synth 8-3332] Sequential element (PM_DATAINPUT/PM_FIFO/rd_ptr_reg_rep[2]) is unused and will be removed from module data_processing.
+WARNING: [Synth 8-3332] Sequential element (PM_DATAINPUT/PM_FIFO/rd_ptr_reg_rep[1]) is unused and will be removed from module data_processing.
+WARNING: [Synth 8-3332] Sequential element (PM_DATAINPUT/PM_FIFO/rd_ptr_reg_rep[0]) is unused and will be removed from module data_processing.
+WARNING: [Synth 8-3332] Sequential element (PM_Init/temp_dc_reg) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/after_page_state_reg[4]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/after_page_state_reg[3]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/after_char_state_reg[2]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/after_char_state_reg[0]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/after_update_state_reg[3]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,0][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,0][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,0][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,0][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,1][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,1][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,1][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,1][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,2][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,2][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,2][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,2][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,3][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,3][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,3][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,3][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,4][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,4][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,4][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,4][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,5][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,5][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,5][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,5][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,6][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,6][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,6][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,6][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,7][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,7][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,7][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,7][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,8][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,8][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,8][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,8][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,9][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,9][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,9][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,9][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,10][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,10][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,10][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,10][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,11][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[2,11][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[1,11][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[0,11][7]) is unused and will be removed from module PmodOLEDCtrl.
+WARNING: [Synth 8-3332] Sequential element (PM_UserDisp/user_screen_reg[3,12][7]) is unused and will be removed from module PmodOLEDCtrl.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------------------+---------------+----------------+
+|Module Name  | RTL Object              | Depth x Width | Implemented As | 
++-------------+-------------------------+---------------+----------------+
+|OledInit     | after_state             | 32x1          | LUT            | 
+|OledInit     | after_state             | 32x5          | LUT            | 
+|OledInit     | temp_spi_data           | 32x1          | LUT            | 
+|OledUser     | after_state             | 32x1          | LUT            | 
+|OledUser     | temp_addr               | 32x1          | LUT            | 
+|fpga_top     | OledSetupArray[0][char] | 32x7          | LUT            | 
+|OledUser     | after_state             | 32x1          | LUT            | 
+|OledUser     | temp_addr               | 32x1          | LUT            | 
+|PmodOLEDCtrl | PM_Init/after_state     | 32x1          | LUT            | 
+|PmodOLEDCtrl | PM_Init/temp_spi_data   | 32x1          | LUT            | 
+|fpga_top     | OledSetupArray[0][char] | 32x7          | LUT            | 
++-------------+-------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------+-----------+----------------------+--------------+
+|PM_UART     | fifo_tx_inst/fifo_reg | Implied   | 16 x 8               | RAM32M x 2   | 
++------------+-----------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PM_PLL/clk_100' to pin 'PM_PLL/bbstub_clk_100/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PM_PLL/clk_36' to pin 'PM_PLL/bbstub_clk_36/O'
+WARNING: [Synth 8-565] redefining clock 'clk_pad'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 885.746 ; gain = 525.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------------+-----------+----------------------+--------------+
+|PM_UART     | fifo_tx_inst/fifo_reg | Implied   | 16 x 8               | RAM32M x 2   | 
++------------+-----------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fpga_top    | PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/data_out_vld_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |clk_wiz_0         |         1|
+|2     |xadc_wiz_0        |         1|
+|3     |mem_oled_char_lib |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz_0         |     1|
+|2     |mem_oled_char_lib |     1|
+|3     |xadc_wiz_0        |     1|
+|4     |CARRY4            |    88|
+|5     |LUT1              |   175|
+|6     |LUT2              |    90|
+|7     |LUT3              |   163|
+|8     |LUT4              |   152|
+|9     |LUT5              |   219|
+|10    |LUT6              |   387|
+|11    |MUXF7             |    65|
+|12    |MUXF8             |    28|
+|13    |RAM32M            |     2|
+|14    |SRL16E            |     1|
+|15    |FDCE              |   634|
+|16    |FDPE              |    95|
+|17    |FDRE              |   634|
+|18    |FDSE              |    75|
+|19    |IBUF              |     8|
+|20    |IOBUF             |     1|
+|21    |OBUF              |    28|
+|22    |OBUFT             |     1|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------------------+------+
+|      |Instance             |Module                        |Cells |
++------+---------------------+------------------------------+------+
+|1     |top                  |                              |  2882|
+|2     |  PM_CLKDIV_1        |clk_prescaler__parameterized0 |    24|
+|3     |  PM_CLKDIV_1K       |clk_prescaler                 |    19|
+|4     |  PM_CLKDIV_1M       |clk_prescaler_0               |    19|
+|5     |  PM_DATA_PROCESS    |data_processing               |    42|
+|6     |    PM_DATAINPUT     |data_processing_input         |    37|
+|7     |      PM_FIFO        |fifo_ram_3                    |    29|
+|8     |    PM_MYFILTER      |my_filter                     |     5|
+|9     |      PM_FILTER_TEST |my_FIR_filter                 |     4|
+|10    |  PM_I2C_WRAPPER     |i2c_wrapper                   |   144|
+|11    |    PM_I2C_MASTER    |i2c_master                    |   118|
+|12    |  PM_OLED            |PmodOLEDCtrl                  |  1499|
+|13    |    PM_Init          |OledInit                      |   167|
+|14    |      DELAY_COMP     |Delay                         |    59|
+|15    |      SPI_COMP       |SpiCtrl_2                     |    53|
+|16    |    PM_UserDisp      |OledUser                      |  1328|
+|17    |      PM_SPI_COMP    |SpiCtrl                       |    52|
+|18    |  PM_SPI_CONTROLLER  |spi_controller                |   184|
+|19    |    PM_SPI_MASTER    |spi_wrapper_1x                |   171|
+|20    |      PM_SPI_M       |spi_master                    |   152|
+|21    |  PM_UART            |uart                          |   206|
+|22    |    fifo_rx_inst     |fifo_ram                      |    26|
+|23    |    fifo_tx_inst     |fifo_ram_1                    |    38|
+|24    |    uart_rx_inst     |uart_rx                       |    64|
+|25    |    uart_tx_inst     |uart_tx                       |    75|
+|26    |  PM_XADC_PWM        |dbg_pwm_out                   |    39|
++------+---------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 281 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 904.223 ; gain = 204.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 904.223 ; gain = 543.777
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+332 Infos, 314 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 904.223 ; gain = 555.250
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dan/Desktop/electronics/vivado/06_demo_all.runs/synth_1/fpga_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_top_utilization_synth.rpt -pb fpga_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 904.223 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 14 09:57:24 2018...
