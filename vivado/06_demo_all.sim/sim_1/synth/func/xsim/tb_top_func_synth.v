@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Sun Oct 14 08:57:01 2018
+// Date        : Sun Oct 14 10:09:40 2018
 // Host        : DESKTOP-43187V1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               C:/Users/dan/Desktop/electronics/vivado/06_demo_all.sim/sim_1/synth/func/xsim/tb_top_func_synth.v

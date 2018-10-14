@@ -1,1 +1,1 @@
-ERROR: [XSIM 43-4316] Can not find file: ../../../../../06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/types.vhd" into library xil_defaultlib

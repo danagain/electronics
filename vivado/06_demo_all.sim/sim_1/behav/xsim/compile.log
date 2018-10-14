@@ -1,9 +1,3 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/New folder/CoeffHelpers.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/New folder/standard_additions_c.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_FIR_filter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_FIR_filter
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/my_filter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity my_filter
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/data_processing.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity data_processing
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sources_1/imports/src/fpga_top.vhd" into library xil_defaultlib

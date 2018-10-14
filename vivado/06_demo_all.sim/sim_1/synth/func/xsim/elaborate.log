@@ -23,17 +23,12 @@ Compiling module unisims_ver.FDCE_default
 Compiling module xil_defaultlib.clk_prescaler__parameterized0
 Compiling module xil_defaultlib.clk_prescaler
 Compiling module xil_defaultlib.clk_prescaler_0
-Compiling module unisims_ver.FDRE_default
 Compiling module unisims_ver.FDSE_default
-Compiling module unisims_ver.RAM32M
+Compiling module unisims_ver.FDRE_default
 Compiling module xil_defaultlib.fifo_ram_3
+Compiling module unisims_ver.SRL16E_default
 Compiling module xil_defaultlib.data_processing_input
-Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,BCASCREG=0,...
-Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
-Compiling module unisims_ver.latchsre_ldce
-Compiling module unisims_ver.LDCE(IS_G_INVERTED=1'b1)
 Compiling module xil_defaultlib.my_FIR_filter
-Compiling module xil_defaultlib.pipeline
 Compiling module xil_defaultlib.my_filter
 Compiling module xil_defaultlib.data_processing
 Compiling module xil_defaultlib.i2c_master
@@ -67,6 +62,7 @@ Compiling module xil_defaultlib.spi_master
 Compiling module xil_defaultlib.spi_wrapper_1x
 Compiling module xil_defaultlib.spi_controller
 Compiling module xil_defaultlib.fifo_ram
+Compiling module unisims_ver.RAM32M
 Compiling module xil_defaultlib.fifo_ram_1
 Compiling module xil_defaultlib.uart_rx
 Compiling module xil_defaultlib.uart_tx

@@ -37,9 +37,3 @@ INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_v8_4_1
 INFO: [VRFC 10-311] analyzing module mem_oled_char_lib_blk_mem_gen_v8_4_1_synth
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/types.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd" into library xil_defaultlib
-ERROR: [VRFC 10-149] 'standard_additions' is not compiled in library ieee_proposed [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd:5]
-ERROR: [VRFC 10-91] real_vector is not declared [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd:9]
-ERROR: [VRFC 10-91] real_vector is not declared [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd:10]
-ERROR: [VRFC 10-1504] unit coeffhelpers ignored due to previous errors [C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd:7]
-INFO: [VRFC 10-240] VHDL file C:/Users/dan/Desktop/electronics/vivado/06_demo_all.srcs/sim_1/imports/New folder/CoeffHelpers.vhd ignored due to errors
