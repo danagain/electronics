@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../src_ip/clk_wiz_0" \
+"../../../../src_ip/mem_oled_char_lib/sim/mem_oled_char_lib.v" \
+"../../../../src_ip/xadc_wiz_0/xadc_wiz_0.v" \
+"../../../../src_ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../src_ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../src_ip/clk_wiz_0" \
+"../../../../src_tb/bfm_i2c_slave.sv" \
+"../../../../src_tb/bfm_uart.sv" \
+"../../../../src_tb/tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

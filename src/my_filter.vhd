@@ -93,9 +93,6 @@ PM_PIPELINE: entity work.pipeline
     );        	
 	
 PM_FILTER_TEST: entity work.my_FIR_filter
-       generic map (
-            G_DATA_WIDTH     => G_DATA_WIDTH
-        )
         port map(
             clk          => clk,
             rst_n        => rst_n,        

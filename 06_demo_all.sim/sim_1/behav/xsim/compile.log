@@ -1,0 +1,49 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pmod_oled/Delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Delay
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pmod_oled/OledInit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OledInit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/06_demo_all.srcs/sources_1/new/math_help.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/06_demo_all.srcs/sources_1/new/helpers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pmod_oled/OledUser.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OledUser
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pmod_oled/PmodOLEDCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodOLEDCtrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pmod_oled/SpiCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SpiCtrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/clk_prescaler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_prescaler
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/fifo_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/data_processing_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_processing_input
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pipeline
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/my_FIR_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_FIR_filter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/my_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_filter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/data_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_processing
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/dbg_pwm_out.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dbg_pwm_out
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/i2c/i2c_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity i2c_master
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/dan/Desktop/parrtb/src/i2c/i2c_master.vhd:87]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/dan/Desktop/parrtb/src/i2c/i2c_master.vhd:90]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/dan/Desktop/parrtb/src/i2c/i2c_master.vhd:93]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/i2c/i2c_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity i2c_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/spi/spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spi_master
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/spi/spi_wrapper_1x.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spi_wrapper_1x
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/spi/spi_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spi_controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/uart/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_tx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/uart/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart_rx
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/uart/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uart
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dan/Desktop/parrtb/src/fpga_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fpga_top
