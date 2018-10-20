@@ -35,7 +35,9 @@ architecture RTL of my_filter is
 	-- signals for fir_filter 
     signal fir_out_vld : std_logic;
     signal fir_out_data : std_logic_vector (G_DATA_WIDTH-1 downto 00);
-
+    -- signals for fir_filter 2
+    signal fir_out_vld2 : std_logic;
+    signal fir_out_data2 : std_logic_vector (G_DATA_WIDTH-1 downto 00);
     -- signals for pipeline
     signal pipe_out_vld : std_logic;
     signal pipe_out_data : std_logic_vector (G_DATA_WIDTH-1 downto 00);    
@@ -56,9 +58,9 @@ begin
             when "001" => filter_out_vld <= pipe_out_vld;
             when "010" => filter_out_vld <= pipe_out_vld;
             when "011" => filter_out_vld <= pipe_out_vld;
-            when "100" => filter_out_vld <= fir_out_vld;
-            when "101" => filter_out_vld <= fir_out_vld;
-            when "110" => filter_out_vld <= fir_out_vld;
+            when "100" => filter_out_vld <= fir_out_vld2;
+            when "101" => filter_out_vld <= fir_out_vld2;
+            when "110" => filter_out_vld <= fir_out_vld2;
             when "111" => filter_out_vld <= fir_out_vld;         
             when others => filter_out_vld <= pipe_out_vld;
         end case;
@@ -68,9 +70,9 @@ begin
             when "001" => filter_out_data <= pipe_out_data;
             when "010" => filter_out_data <= pipe_out_data;
             when "011" => filter_out_data <= pipe_out_data;
-            when "100" => filter_out_data <= fir_out_data;
-            when "101" => filter_out_data <= fir_out_data;
-            when "110" => filter_out_data <= fir_out_data;
+            when "100" => filter_out_data <= fir_out_data2;
+            when "101" => filter_out_data <= fir_out_data2;
+            when "110" => filter_out_data <= fir_out_data2;
             when "111" => filter_out_data <= fir_out_data;     
             when others => filter_out_data <= pipe_out_data;                   
         end case;
@@ -101,5 +103,14 @@ PM_FILTER_TEST: entity work.my_FIR_filter
             data_out     => fir_out_data,
             data_out_vld => fir_out_vld 
         );   
-        
+        PM_FILTER_TEST2: entity work.my_FIR_filter2
+                port map(
+                    clk          => clk,
+                    rst_n        => rst_n,        
+                    data_in      => filter_in_data,
+                    data_in_vld  => filter_in_vld, 
+                    data_out     => fir_out_data2,
+                    data_out_vld => fir_out_vld2 
+                );   
+                
 end RTL;
